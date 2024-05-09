@@ -1,0 +1,49 @@
+.btn-primary,
+.btn-outline-primary {
+    font-weight: $font-weight-bold;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+
+    background: map-get($theme-colors, primary-300);
+
+    color: map-get($theme-colors, primary-700);
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+
+    &:hover {
+        background: map-get($theme-colors, primary-400);
+        color: map-get($theme-colors, primary-800);
+        text-decoration: none;
+    }
+}
+
+.btn-secondary {
+    background: map-get($theme-colors, secondary-400);
+    color: map-get($theme-colors, secondary-700);
+
+    &:hover {
+        background: map-get($theme-colors, secondary-500);
+        color: map-get($theme-colors, secondary-800);
+    }
+}
+
+.btn-outline-primary {
+    background: map-get($theme-colors, primary-100);
+    color: map-get($theme-colors, primary-700);
+    border: 1px solid map-get($theme-colors, primary-500);
+}
+.btn-outline-secondary {
+    background: map-get($theme-colors, secondary-100);
+    color: map-get($theme-colors, secondary-700);
+    border: 1px solid map-get($theme-colors, secondary-500);
+}
+
+.btn-link {
+    text-decoration: none !important;
+}

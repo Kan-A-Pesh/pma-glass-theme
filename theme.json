@@ -1,0 +1,8 @@
+{
+    "name": "glass",
+    "version": "1.0.0",
+    "description": "Elegant glass theme for phpMyAdmin",
+    "author": "Kan-A-Pesh",
+    "url": "https://kan-a-pesh.fr/",
+    "supports": ["5.0", "5.1", "5.2"]
+}

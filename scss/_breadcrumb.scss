@@ -1,0 +1,28 @@
+@import "../../bootstrap/scss/breadcrumb";
+
+.breadcrumb-navbar {
+    background: map-get($theme-colors, primary-100);
+    opacity: 0.2;
+    transition: opacity 0.5s;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    .breadcrumb-item {
+        + .breadcrumb-comment {
+            padding-left: 0.5rem;
+        }
+
+        a {
+            color: map-get($theme-colors, primary-900);
+        }
+    }
+
+    .breadcrumb-comment {
+        color: #d6d6d6;
+        font-weight: bold;
+        font-style: italic;
+        text-shadow: none;
+    }
+}

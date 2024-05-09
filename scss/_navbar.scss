@@ -1,0 +1,33 @@
+.navbar {
+    padding: 16px;
+    background-color: transparent !important;
+}
+
+.navbar-nav {
+    padding: 0.1rem;
+    gap: 0.25rem;
+    @include glass(0.5rem);
+}
+
+.navbar-nav .icon {
+    margin-right: 0.5em;
+    vertical-align: -3px;
+}
+
+.navbar-nav .nav-item {
+    border-radius: 0.5rem;
+    color: black;
+
+    &:hover {
+        background: map-get($theme-colors, primary-300);
+    }
+
+    &.active {
+        background: map-get($theme-colors, primary-700);
+        color: white;
+    }
+
+    .nav-link {
+        color: inherit;
+    }
+}

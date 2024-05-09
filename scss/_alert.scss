@@ -1,0 +1,38 @@
+.alert {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin: 0;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.alert-primary {
+    color: #000;
+    background-color: #e8eef1;
+    background-image: none;
+    border-color: #3a6c7e;
+
+    h1 {
+        border-color: #ffb10a;
+    }
+}
+
+.alert-success {
+    color: transparentize(map-get($theme-colors, dark-900), 0.2);
+    background-color: map-get($theme-colors, success-300);
+    background-image: none;
+}
+
+.alert-danger {
+    color: #000;
+    background-color: pink;
+    background-image: none;
+    border-color: #333;
+
+    h1 {
+        border-color: #f00;
+    }
+}

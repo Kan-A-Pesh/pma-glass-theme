@@ -1,0 +1,89 @@
+.table {
+    caption-side: top;
+    margin-bottom: 8px;
+    @include glass(8px, 0.5, 12px);
+    border: none !important;
+    padding: 8px;
+
+    tr {
+        border-radius: 8px;
+
+        &:hover {
+            background: map-get($theme-colors, primary-100);
+        }
+
+        &:last-of-type {
+            td:first-of-type,
+            th:first-of-type {
+                border-bottom-left-radius: 8px;
+            }
+            td:last-of-type,
+            th:last-of-type {
+                border-bottom-right-radius: 8px;
+            }
+        }
+        &:first-of-type {
+            td:first-of-type,
+            th:first-of-type {
+                border-top-left-radius: 8px;
+            }
+            td:last-of-type,
+            th:last-of-type {
+                border-top-right-radius: 8px;
+            }
+        }
+
+        td,
+        th {
+            touch-action: manipulation;
+            background: transparent;
+            box-shadow: none;
+            padding: 4px 8px;
+        }
+    }
+
+    .table-active {
+        background: transparentize(map-get($theme-colors, primary-100), 0.35);
+    }
+
+    thead {
+        border-radius: 8px;
+
+        th {
+            padding: 8px;
+
+            a {
+                display: flex;
+            }
+
+            &:first-of-type {
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+            }
+            &:last-of-type {
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+        }
+
+        td {
+            padding: 8px;
+            display: none;
+        }
+    }
+
+    caption {
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.checkall_box {
+    margin-left: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+    .table th.position-sticky {
+        top: 92px;
+    }
+}
